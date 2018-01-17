@@ -1,0 +1,71 @@
+<html>
+<Head>
+<Title>Kaitlyn's website</Title>
+</Head>
+<Body>
+<svg height="600" width="600">
+<polygon points="0,0 0,800 800,800 800,0"
+          fill="url(#linearGrad)"/> 
+<!-- head -->
+<circle cx="300" cy="200" r="200" fill="black" id="face" />
+<linearGradient id="linearGrad" 
+                  x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#AC92EC"/>
+    <stop offset="100%" stop-color="#00E676" />
+</linearGradient>
+
+<circle cx="300" cy="400" r="225" fill="black"/>
+  
+<circle cx="300" cy="400" r="160" fill="white"/>
+  
+<circle cx="300" cy="350" r="160" fill="white"/>
+<circle cx="240" cy="200" r="84" fill="white"/>
+<circle cx="340" cy="200" r="84" fill="white"/>
+ 
+<circle cx="340" cy="200" r="30" fill="black"/>
+<circle cx="330" cy="210" r="10" fill="white"/>
+  
+<circle cx="350" cy="180" r="5" fill="white"/>
+
+<!-- eye -->
+<circle cx="235" cy="200" r="30" fill="black"/>
+
+<circle cx="245" cy="210" r="10" fill="white"/>
+
+<circle cx="225" cy="180" r="5" fill="white"/>
+
+<ellipse cx="290" cy="260" rx="40" ry="15" fill="orange"/>
+
+<ellipse cx="200" cy="550" rx="50" ry="80" fill="orange" />
+<ellipse cx="400" cy="550" rx="50" ry="80" fill="orange" />
+
+<ellipse cx="50" cy="370" rx="80" ry="45" fill="black" />
+
+<ellipse cx="550" cy="370" rx="80" ry="45" fill="black" />
+
+<text x="10" y="45" fill="#AB47BC"  font-family="Showcard Gothic" font-size="35"> Hi im Pingu,i love nootella!  </text>
+
+</svg>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+
+ <script>
+var faceShape = $("#face");
+var isHeadBlack = true;
+
+faceShape.click(function() {
+
+    if (isHeadBlack)
+    {
+    faceShape.attr("fill","red");
+      isHeadBlack = false;
+    } else 
+    {
+      faceShape.attr("fill","black");
+      isHeadBlack = true;
+    }
+});
+
+  </script>
+</Body>
+</html>
