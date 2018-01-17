@@ -1,2 +1,2 @@
 # Pingu
-Pingu likes nootella
+* Pingu likes nootella
